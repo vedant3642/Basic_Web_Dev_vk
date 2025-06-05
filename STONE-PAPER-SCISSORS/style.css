@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: aquamarine; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    color: #ff4500; /* Bright orange for emphasis */
+    margin-bottom: 3rem;
+    margin-top: 0px;
+}
+
+/* Layout for Rock, Paper, Scissors */
+.layout {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Game Options Styling */
+.obj {
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.obj:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Images for Rock, Paper, Scissors */
+.obj img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+/* Scoreboard Container */
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px;
+    margin-top: 4rem;
+}
+
+.score {
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 45%;
+}
+
+.score p:first-child {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.score p:last-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Message Container */
+.msg-conatiner {
+    text-align: center;
+    margin-top: 4rem;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(5, 5, 51);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#msg {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: rgb(5, 5, 51);
+}
